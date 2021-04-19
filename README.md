@@ -17,8 +17,12 @@ npm install ganache-cli web3@0.20.1 solc
 
 node_modules/.bin/ganache-cli // ganache 실행.
 ```
-Available Accounts 와 Private Keys가 출력되고 포트 번호 나옴.ex) Listening on 127.0.0.1:8545
-
+#### ganache 실행 결과.
+Available Accounts 와 Private Keys가 출력되고 포트 번호 나옴.
+ex) 
+```
+Listening on 127.0.0.1:8545
+```
 --------------
 
 ## 간단한 테스트
