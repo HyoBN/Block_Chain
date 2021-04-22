@@ -44,3 +44,15 @@ Solidity 버전으로 인한 문제는 아니였고, memory storage 명시 문�
 > 함수 내에 선언된 변수는 memory로 자동적으로 초기화해준다.
 
 #### Voting.sol에서 에러가 났던 변수(bytes32[] candidateNames)는 constructor 내에서만 임시적으로 사용되기 때문에 **Memory**에 저장해야했다.
+
+
+-----------------------
+
+#### 에러 발생.
+```
+> deplayedContract = new web3.eth.Contract(abi)
+Thrown:
+TypeError: web3.eth.Contract is not a constructor
+```
+
+
