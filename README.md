@@ -25,7 +25,7 @@ Listening on 127.0.0.1:8545
 ```
 --------------
 
-## 간단한 테스트
+## 컨트랙트 테스트
 새로운 터미널 창을 열어서,
 ```
 cd ethereum_voting_dapp/chapter1
@@ -52,3 +52,18 @@ node_modules/.bin/solcjs --bin --abi Voting.sol
 **.abi**파일은 ABI(Application binary Interface)라는 일종의 인터페이스로, 컨트랙트의 템플릿 같은 개념이고 컨트랙트 사용자에게 어떤 메소드들을 사용할 수 있는지 알려주는 역할을 한다..
 
 **이들은 컨트랙트와 상호작용하기 위해서 필요한 두 가지 요소이다.**
+
+
+
+
+## 컨트랙트를 블록체인에 배포하기.
+
+터미널 창에서,
+```
+node
+Web3 = require('web3')
+web3 = new Web3("http://localhost:8545")
+bytecode = fs.readFileSync('./Voting_sol_Voting.bin').toString()
+abi = fs.readFileSync('./Voting_sol_Voting.abi').toString()
+abi = JSON.parse(fs.readFileSync('./Voting_sol_Voting.abi').toString())
+```
