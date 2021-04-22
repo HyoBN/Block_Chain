@@ -38,3 +38,15 @@ node
  web3.eth.getBalance('0x23816943921bc5e80496546524d3a0701e632760').toNumber() // wei 단위 값만 출력.
  web3.fromWei('100000000000000000000','ether') // ether 단위로 출력.
 ```
+
+
+## Compile.
+터미널 창에서,
+```
+node_modules/.bin/solcjs --bin --abi Voting.sol
+```
+입력하면 동일 디렉토리에 .bin , .abi 파일이 생성됨.
+
+**.bin**파일은 바이트코드가 저장되어 있으며 이 바이트코드는 블록체인에 실제로 배포되는 코드이다.
+**.abi**파일은 ABI(Application binary Interface)라는 일종의 인터페이스로, 컨트랙트의 템플릿 같은 개념이고 컨트랙트 사용자에게 어떤 메소드들을 사용할 수 있는지 알려주는 역할을 한다.
+**이들은 컨트랙트와 상호작용하기 위해서 필요한 두 가지 요소이다.**
