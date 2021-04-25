@@ -55,4 +55,11 @@ Thrown:
 TypeError: web3.eth.Contract is not a constructor
 ```
 
+-----------------
+#### 에러 해결 위해 test.js 파일 생성. 기존 에러는 해결되었지만 다른 에러 발생.
 
+```
+var abiDefinition = JSON.parse(compiledCode.contracts[':Voting'].interface)
+                                                     ^
+TypeError: Cannot read property ':Voting' of undefined
+```
