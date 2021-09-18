@@ -67,3 +67,14 @@ bytecode = fs.readFileSync('./Voting_sol_Voting.bin').toString()
 abi = fs.readFileSync('./Voting_sol_Voting.abi').toString()
 abi = JSON.parse(fs.readFileSync('./Voting_sol_Voting.abi').toString())
 ```
+
+-----------------------
+
+가나슈  : 테스트 목적으로 PC에 설치하여 사용할 수 있는 간이 블록체인.  
+ - 이더리움 기반 블록체인 app 개발 테스트에 사용할 수 있는 개인용(프라이빗) 블록체인이다.
+ - 로컬에서 네트워크 연결없이 계약을 배포, 테스트 해볼 수 있다.
+
+web3.js : 블록체인과 상호작용하는 라이브러리.
+
+트러플(Truffle) : 이더리움 기반 dapp를 쉽게 개발할 수 있도록 도와주는 블록체인 프레임워크.  
+ - 스마트 컨트랙트 컴파일, 배포, 관리, 테스트를 빠르고 쉽게 할 수 있다.
